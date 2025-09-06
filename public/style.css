@@ -48,6 +48,7 @@
   from {
     transform: translate(55%, -3%);
   }
+
   to {
     transform: translate(0%, 10%);
   }
@@ -57,6 +58,7 @@
   from {
     transform: translate(5%, -5%);
   }
+
   to {
     transform: translate(-20%, 30%);
   }

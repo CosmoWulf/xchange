@@ -1,6 +1,6 @@
 'use client';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faArrowRight, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faArrowRight, faXmark, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useState } from "react";
 import '../../public/style.css';
@@ -80,22 +80,9 @@ export default function HomePage() {
 
       </div>
 
-      <main className="mt-16">
+      <main>
         {/* Hero Section */}
         <div className="h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
-
-          {/* Hero Features */}
-          <div id="hero-features" className="hidden sm:flex gap-8 my-6 relative z-10">
-            <div className="flex justify-center gap-2 items-center text-gray-500">
-              <p>Code Optional</p>
-            </div>
-            <div className="flex justify-center gap-2 items-center text-gray-500">
-              <p>Drag & drop builder</p>
-            </div>
-            <div className="flex justify-center gap-2 items-center text-gray-500">
-              <p>Windows, Mac, Linux</p>
-            </div>
-          </div>
 
           {/* Title */}
           <h1 className="text-4xl text-[#1F2937] font-semibold leading-snug mt-4 sm:text-6xl relative z-10">
@@ -104,6 +91,8 @@ export default function HomePage() {
           <p className="text-xl mt-4 sm:text-2xl text-gray-700 relative z-10">
             Buy, Sell, and Grow with Confidence
           </p>
+
+          <FontAwesomeIcon icon={faAngleDown} className="absolute bottom-10 animate-bounce text-2xl z-10" />
 
           {/* Animated Blobs */}
           <div id="hero-shape">
